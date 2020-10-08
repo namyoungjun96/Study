@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Start {
+	public static void main(String[] args) {
+		int input, people;
+
+		Ride ri=new Ride();
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("사다리 게임");
+		System.out.print("몇 명을 원하시나요 : ");
+		people=sc.nextInt();
+		Element el=new Element();
+		
+		el.draw();
+
+		while(true) {
+			System.out.print("몇번을 원하시나요? : ");
+			input=sc.nextInt();
+			
+			if(input==0)
+				break;
+
+			System.out.println(ri.ride(input)+"번 입니다.");
+		}
+
+		sc.close();
+	}
+}

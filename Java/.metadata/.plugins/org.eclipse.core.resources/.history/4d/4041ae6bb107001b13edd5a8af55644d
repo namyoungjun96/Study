@@ -1,0 +1,11 @@
+
+public class Elemental {
+	void Elemental() {
+		int x=5;
+		int y=10;
+		
+		int[][] ladder={{0, 1, 0, 1, 0}, {0, 1, 0, 1, 0}, {0, 1, 0, 1, 0}, {0, 1, 0, 1, 0}, {0, 1, 0, 1, 0}};
+		
+		System.out.println(ladder);
+	}
+}

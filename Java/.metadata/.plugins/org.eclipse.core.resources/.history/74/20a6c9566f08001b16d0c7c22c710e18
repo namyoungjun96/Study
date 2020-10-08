@@ -1,0 +1,25 @@
+public class Ride {
+	Element el=new Element();
+
+	int ride(int count) {
+		count-=1;
+
+		for(int i=0; i<el.ladder.length; i++) {
+			try {
+				if(el.ladder[i][count]==0) {
+					continue;
+				}
+
+				else if((el.ladder[i][count]+el.ladder[i][count+1])==2) {
+					count++;
+				}
+				else {
+					count--;
+				}
+			} catch(Exception e){
+
+			}
+		}
+		return count+1;
+	}
+}
