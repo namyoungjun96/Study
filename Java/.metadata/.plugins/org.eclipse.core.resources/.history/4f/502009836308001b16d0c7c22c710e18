@@ -1,7 +1,0 @@
-public class Start {
-	public static void main(String[] args) {
-		Ride ri=new Ride();
-		
-		System.out.println(ri.ride(2));
-	}
-}

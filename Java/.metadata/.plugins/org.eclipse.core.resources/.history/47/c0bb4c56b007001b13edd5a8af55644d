@@ -1,9 +1,0 @@
-
-public class Elemental {
-	void Elemental() {
-		int x=5;
-		int y=10;
-		
-		int[][] ladder=new int[x][y];
-	}
-}
