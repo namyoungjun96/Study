@@ -6,4 +6,4 @@ graph =[]
 for i in range(block):
     graph.append(list(map(int, input().split())))
     
-print(graph)
+def dfs(graph, )
