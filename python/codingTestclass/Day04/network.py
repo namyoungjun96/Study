@@ -7,11 +7,15 @@ def solution(n, computers):
     answer = 0
     visited = [False] * n
 
-    answer = bfs(computers, visited, 0, 1)
-    print("first answer : ", answer)
+    for i in range(n):
+        if visited[i] == False:
+            bfs(computers, visited, i)
+            answer += 1
+
+    print(answer)
     return answer
 
-def bfs(graph, visited, index, answer):
+def bfs(graph, visited, index):
     visited[index] = True
     queue = deque([])
     queue.append(graph[index])
@@ -20,24 +24,11 @@ def bfs(graph, visited, index, answer):
         check = queue.popleft()
         
         for i in range(len(check)):
-            if check[i] == 1 and visited[i] == False and i != index:
+            if check[i] == 1 and visited[i] == False:
                 visited[i] = True
-                index = i
-                print("first : ", answer)
-                break
-            elif check[i] == 1 and visited[i] == False and i == index:
-                answer += 1
-                visited[i] = True
-                index = i
-                print("second : ", answer)
-            elif visited[i] == False:
-                index = i
-                print("third : ", answer)
-                
-        if False in visited:
-            queue.append(graph[index])
-                
-    return answer
+                queue.append(graph[i])
+
+    return visited
 
 n = 3
 n2 = 4

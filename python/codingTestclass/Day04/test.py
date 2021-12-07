@@ -1,8 +1,12 @@
+a=[1, 2, 3, 3]
+
 from collections import deque
 
-queue = deque([])
-
-list1 = [1, 0, 0, 1]
-queue.append(list1)
+queue = deque([a])
 print(queue)
-print(queue.popleft())
+
+queue = deque([])
+for i in range(len(a)):
+    queue.append(a[i])
+temp = queue.popleft()
+print(temp)
