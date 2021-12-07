@@ -10,3 +10,7 @@ for i in range(len(a)):
     queue.append(a[i])
 temp = queue.popleft()
 print(temp)
+
+print(max(queue))
+print(queue)
+print(queue[0])
