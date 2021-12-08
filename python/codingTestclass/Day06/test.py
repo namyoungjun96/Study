@@ -12,5 +12,8 @@ temp = queue.popleft()
 print(temp)
 
 queue = deque([])
+print(sum(queue))
 queue += a
 print(queue, queue.popleft())
+queue[0] += 1
+print(queue)
