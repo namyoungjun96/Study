@@ -1,21 +1,26 @@
 def solution(prices):
     answer = []
-    time = 0
-    lastTime = -1
-
-    for i in range(len(prices)-1, -1, -1):
-        print("i", i, "time", time)
-        if prices[i] > prices[i-1]:
-            answer.append(time)
-        else:
-            answer.append(time-lastTime)
-        time += 1
-        lastTime += 1
-
-    answer.reverse()
+    prices.pop()
+    prices.reverse()
+    
+    while prices:
+        time = 1
+        compareNumber = prices.pop()
+        
+        for i in range(len(prices)-1, -1, -1):
+            if compareNumber <= prices[i]:
+                time += 1
+            else : 
+                break
+        
+        answer.append(time)
+    
+    answer.append(0)
     print(answer)
     return answer
 
 prices = [1, 2, 3, 2, 3]
 #return = [4, 3, 1, 1, 0]
 solution(prices)
+
+# [3, 2, 3, 2, 1]
