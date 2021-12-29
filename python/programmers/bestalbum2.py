@@ -3,17 +3,19 @@
 
 def solution(genres, plays):
     answer = []
-    album = {}
+    playsRank = {}
     genresRank = {}
     
-    for i in range(len(genres)):
-        album[plays[i]] = genres[i]
+    for i in range(len(plays)):
+        playsRank[i] = plays[i]
         
     for i in range(len(genres)):
         if genres[i] not in genresRank:
             genresRank[genres[i]] = plays[i]
         else:
             genresRank[genres[i]] = genresRank.get(genres[i]) + plays[i]
+            
+    print(playsRank, genresRank)
     
     return answer
 
