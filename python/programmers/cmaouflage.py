@@ -15,7 +15,6 @@ def solution(clothes):
             answer *= (spy.get(i)+1)
             
     answer -= 1    
-    print(answer)    
     return answer
 
 clothes = [['yellow_hat', 'headgear'], ['blue_sunglasses', 'eyewear'], ['green_turban', 'headgear']]
