@@ -1,5 +1,4 @@
 # 프로그래머스 해시 3단계 베스트 앨범
-# 푸는중
 
 def solution(genres, plays):
     answer = []
