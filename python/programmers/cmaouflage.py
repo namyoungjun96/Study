@@ -1,3 +1,5 @@
+# 프로그래머스 해시 2단계 위장
+
 def solution(clothes):
     answer = 0
     spy = {}
