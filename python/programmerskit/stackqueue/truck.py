@@ -1,4 +1,5 @@
 # 프로그래머스 스택/큐 2단계 다리를 지나는 트럭
+# DAY 06 문제풀이
 
 from collections import deque
 

@@ -1,4 +1,5 @@
 # 프로그래머스 스택/큐 2단계 프린터
+# DAY 05 문제풀이
 
 from collections import deque
 

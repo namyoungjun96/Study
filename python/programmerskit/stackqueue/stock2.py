@@ -1,3 +1,5 @@
+# DAY 07 문제풀이
+
 def solution(prices):
     answer = []
     prices.pop()
