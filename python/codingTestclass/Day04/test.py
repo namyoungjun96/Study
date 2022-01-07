@@ -14,3 +14,6 @@ print(temp)
 print(max(queue))
 print(queue)
 print(queue[0])
+
+a=[10, 2, 3, 4, 5]
+print(a[0][0])
