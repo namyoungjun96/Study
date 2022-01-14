@@ -2,6 +2,7 @@
 # 못풀어서 정답 봄...
 
 from itertools import permutations
+import math
 
 def solution(numbers):
     answer = 0
@@ -9,7 +10,6 @@ def solution(numbers):
     
     numbers = list(numbers)
     numbers.sort()
-    print(numbers)
     permute = list(permutations(numbers, len(numbers)))
     list_permute = [''.join(map(str, i)) for i in permute]
     for i in range(len(numbers)):
@@ -20,17 +20,20 @@ def solution(numbers):
     list_permute = list(set(list_permute))
     list_permute.sort()
     print(list_permute)
-            
+    
+    array = [True for i in range(max(list_permute) + 1)] 
+
+    for i in range(2, int(math.sqrt(max(list_permute))) + 1): 
+        if array[i] == True: 
+            j = 2 
+            while i * j <= max(list_permute):
+                array[i * j] = False
+                j += 1
+                
     for i in list_permute:
-        count = 2
-        while count * count <= i:
-            if i % count == 0:
-                count = 0
-                break
-            count += 1
-        if count != 0:
+        if array[i] == True:
             answer += 1
-                    
+    
     print(answer)
     return answer
 
