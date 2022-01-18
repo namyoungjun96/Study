@@ -1,3 +1,5 @@
+# 프로그래머스 1단계 소수 만들기
+
 def solution(nums):
     answer = -1
     answer += 1
