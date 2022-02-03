@@ -11,3 +11,6 @@ console.log(foo, x, 1 / 2);
 var b = "hello";
 var b = "secret";
 console.log(b);
+
+var x, y, z;
+(x = 1), (y = 2), (z = 3);
