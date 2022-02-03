@@ -1,5 +1,4 @@
-a = [1, 1, 2, 1, 3, 4]
-b = "best album"
+import itertools
 
-print(a.count(1))
-print(b.count('b'))
+a =list(itertools.combinations(['1', '2', '3'], 2))
+print(a[1])
