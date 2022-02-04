@@ -14,3 +14,6 @@ console.log(b);
 
 var x, y, z;
 (x = 1), (y = 2), (z = 3);
+
+console.log(1 - Infinity);
+console.log(10 - "1");
