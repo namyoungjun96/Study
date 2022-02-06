@@ -17,3 +17,4 @@ var x, y, z;
 
 console.log(1 - Infinity);
 console.log(10 - "1");
+console.log("test");
