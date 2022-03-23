@@ -1,4 +1,4 @@
-m , n = 2, 1
+m , n = 3, 5
 
 graph = [[0]*m for _ in range(n)]
 
