@@ -1,7 +1,9 @@
+package codingtest.codility;
+
 /* 
-ì½”ë”œë¦¬í‹° ë ˆë²¨4
-7ë¶„
-77í¼
+ÄÚµô¸®Æ¼ ·¹º§4
+7ºĞ
+77ÆÛ
 */
 
 class Solution {
