@@ -9,5 +9,5 @@ function getClock() {
   clock.innerText = `${hours} : ${minutes} : ${seconds}`;
 }
 
-getClock;
+getClock();
 setInterval(getClock, 1000);
